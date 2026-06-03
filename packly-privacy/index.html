@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Packly</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f2ec;
+      --ink: #1a1710;
+      --accent: #c84b2f;
+      --muted: #7a7568;
+      --border: #d8d2c8;
+      --card: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    header {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header .app-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    header .subtitle {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: #b0ab9e;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin: 2rem auto 0;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      width: fit-content;
+      background: var(--card);
+    }
+
+    .lang-btn {
+      padding: 0.5rem 1.4rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: var(--muted);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    .updated {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: right;
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+
+    section {
+      margin-bottom: 2.2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.8rem 2rem;
+    }
+
+    section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: var(--ink);
+      margin-bottom: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    section p {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: #3a3830;
+      margin-bottom: 0.7rem;
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0.7rem;
+    }
+
+    section ul li {
+      font-size: 0.93rem;
+      line-height: 1.75;
+      color: #3a3830;
+      padding-left: 1.2rem;
+      position: relative;
+      margin-bottom: 0.3rem;
+    }
+
+    section ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Visibility */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">Packly</div>
+  <div class="subtitle">Privacy Policy</div>
+
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</header>
+
+<main>
+  <p class="updated" id="updated-label">Ultimo aggiornamento: 14 maggio 2025</p>
+
+  <!-- ==================== ITALIANO ==================== -->
+  <div data-lang="it" class="visible">
+
+    <section>
+      <h2><span class="num">1</span> Introduzione</h2>
+      <p>La presente Informativa sulla Privacy descrive le modalità con cui <strong>Loris Daniel Dev</strong> ("lo sviluppatore", "noi") gestisce le informazioni relative all'utilizzo dell'applicazione mobile <strong>Packly</strong> ("l'App").</p>
+      <p>Utilizzando l'App, accetti le pratiche descritte in questa informativa.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span> Dati raccolti dallo sviluppatore</h2>
+      <p>Lo sviluppatore <strong>non raccoglie, non archivia e non elabora</strong> alcun dato personale degli utenti attraverso l'App. Non vengono richiesti né nome, indirizzo e-mail, numero di telefono, né alcun altro dato identificativo.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span> Servizi di terze parti</h2>
+      <p>L'App integra servizi di terze parti che possono raccogliere autonomamente alcune informazioni anonime o aggregate, in conformità con le proprie politiche sulla privacy:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> – utilizzato per la visualizzazione di annunci pubblicitari. Può raccogliere identificatori pubblicitari anonimi e dati di utilizzo per ottimizzare la pertinenza degli annunci. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a>.</li>
+        <li><strong>Google Firebase / Analytics</strong> – utilizzato per raccogliere statistiche anonime sull'utilizzo dell'App (numero di sessioni, eventi, crash report) allo scopo di migliorare l'esperienza utente. <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy di Firebase</a>.</li>
+      </ul>
+      <p>Questi servizi operano indipendentemente dallo sviluppatore e sono soggetti alle rispettive politiche sulla privacy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Permessi richiesti</h2>
+      <p>L'App richiede l'accesso a <strong>Internet</strong> esclusivamente per caricare contenuti necessari al suo funzionamento e per la visualizzazione degli annunci pubblicitari tramite AdMob.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span> Pubblico di destinazione</h2>
+      <p>L'App è rivolta a un pubblico adulto (18+). Non è progettata né destinata a bambini al di sotto dei 13 anni. Lo sviluppatore non raccoglie consapevolmente dati da minori.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span> Modifiche alla presente informativa</h2>
+      <p>Lo sviluppatore si riserva il diritto di aggiornare la presente Informativa sulla Privacy. Eventuali modifiche saranno comunicate tramite aggiornamento della data in cima a questa pagina. Si consiglia di consultarla periodicamente.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span> Contatti</h2>
+      <p>Per qualsiasi domanda relativa alla presente informativa, puoi contattarci all'indirizzo:<br>
+      📧 <a href="mailto:dev.packly@gmail.com">dev.packly@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <div data-lang="en">
+
+    <section>
+      <h2><span class="num">1</span> Introduction</h2>
+      <p>This Privacy Policy describes how <strong>Loris Daniel Dev</strong> ("the developer", "we") handles information related to the use of the mobile application <strong>Packly</strong> ("the App").</p>
+      <p>By using the App, you agree to the practices described in this policy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span> Data collected by the developer</h2>
+      <p>The developer does <strong>not collect, store, or process</strong> any personal data from users through the App. No name, email address, phone number, or any other identifying information is requested or stored.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span> Third-party services</h2>
+      <p>The App integrates third-party services that may independently collect some anonymous or aggregated information, in accordance with their own privacy policies:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> – used to display advertisements. It may collect anonymous advertising identifiers and usage data to optimize ad relevance. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+        <li><strong>Google Firebase / Analytics</strong> – used to collect anonymous statistics on App usage (number of sessions, events, crash reports) in order to improve the user experience. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</li>
+      </ul>
+      <p>These services operate independently from the developer and are subject to their respective privacy policies.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Permissions requested</h2>
+      <p>The App requests access to <strong>Internet</strong> exclusively to load content necessary for its operation and to display advertisements through AdMob.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span> Target audience</h2>
+      <p>The App is intended for an adult audience (18+). It is not designed or intended for children under the age of 13. The developer does not knowingly collect data from minors.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span> Changes to this policy</h2>
+      <p>The developer reserves the right to update this Privacy Policy. Any changes will be communicated by updating the date at the top of this page. You are encouraged to review it periodically.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span> Contact</h2>
+      <p>For any questions regarding this policy, you can contact us at:<br>
+      📧 <a href="mailto:dev.packly@gmail.com">dev.packly@gmail.com</a></p>
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2025 Loris Daniel Dev · Packly
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'it' ? 'italiano' : 'english'));
+    });
+    document.getElementById('updated-label').textContent =
+      lang === 'it' ? 'Ultimo aggiornamento: 14 maggio 2025' : 'Last updated: May 14, 2025';
+    document.documentElement.lang = lang;
+  }
+</script>
+
+</body>
+</html>
